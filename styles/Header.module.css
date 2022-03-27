@@ -1,0 +1,22 @@
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+  }
+  
+  .title,
+  .description,
+  .action {
+    text-align: center;
+  }
+  
+  .description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+  .action {
+    cursor: pointer;
+    text-decoration: underline;
+  }

@@ -1,0 +1,17 @@
+.page img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;    
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: rgb(0, 195, 255);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.button:hover {
+    background-color: rgb(3, 152, 197);
+}
