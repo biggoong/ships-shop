@@ -56,23 +56,4 @@ export const getServerSideProps = async (context) => {
     }
 }
 
-// export const getStaticPaths = async () => {
-//     const { data } = await client.query({
-//         query: gql`
-//         {
-//           ships {
-//             id
-//           }
-//         }    
-//         `
-//     });
-
-//     const paths = data.ships.map(id => ({ params: id }))
-
-//     return {
-//         paths: paths,
-//         fallback: false,
-//     }
-// }
-
 export default Ship;
