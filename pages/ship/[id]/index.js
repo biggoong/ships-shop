@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { gql } from '@apollo/client'
-import { client } from '../../client';
+import { client } from '../../../client';
 import { useCart } from '../../../hooks/useCart';
 import styles from '../../../styles/ItemPage.module.css';
 

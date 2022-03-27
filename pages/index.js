@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client'
-import { client } from './client'
+import { client } from '../client'
 import CardList from '../components/CardList'
 
 export default function Home({ ships }) {
