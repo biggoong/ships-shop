@@ -31,7 +31,7 @@ const Ship = ({ ship }) => {
     )
 }
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
     const { data } = await client.query({
         query: gql`
         {
@@ -56,23 +56,23 @@ export const getStaticProps = async (context) => {
     }
 }
 
-export const getStaticPaths = async () => {
-    const { data } = await client.query({
-        query: gql`
-        {
-          ships {
-            id
-          }
-        }    
-        `
-    });
+// export const getStaticPaths = async () => {
+//     const { data } = await client.query({
+//         query: gql`
+//         {
+//           ships {
+//             id
+//           }
+//         }    
+//         `
+//     });
 
-    const paths = data.ships.map(id => ({ params: id }))
+//     const paths = data.ships.map(id => ({ params: id }))
 
-    return {
-        paths: paths,
-        fallback: false,
-    }
-}
+//     return {
+//         paths: paths,
+//         fallback: false,
+//     }
+// }
 
 export default Ship;
